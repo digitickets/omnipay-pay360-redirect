@@ -1,0 +1,24 @@
+{
+    "name": "digitickets/omnipay.paypoint",
+    "type": "library",
+    "description": "Custom OmniPay driver for Pay360",
+    "keywords": ["omnipay", "pay360"],
+    "homepage": "https://gitlab.totallydev.com/digitickets/omnipay.paypoint",
+    "autoload": {
+        "psr-4": { "Omnipay\\Pay360\\" : "src/" }
+    },
+    "require": {
+        "php": "^7.0",
+        "omnipay/common": "~2.0"
+    },
+    "require-dev": {
+        "omnipay/tests": "~2.0",
+        "squizlabs/php_codesniffer": "~1.5"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.x.x-dev"
+        }
+    },
+    "prefer-stable": true
+}
