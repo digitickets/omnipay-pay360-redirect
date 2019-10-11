@@ -102,8 +102,10 @@ class RedirectPurchaseRequest extends AbstractPurchaseRequest
     {
         $httpResponse = parent::sendData($data);
 
-        return $this->response = new RedirectPurchaseResponse($this,
-            $httpResponse->json());
+        return $this->response = new RedirectPurchaseResponse(
+            $this,
+            $httpResponse->json()
+        );
     }
 
     /**
@@ -111,7 +113,9 @@ class RedirectPurchaseRequest extends AbstractPurchaseRequest
      */
     public function getEndpoint(): string
     {
-        $endpoint = sprintf($this->apiResourceString, parent::getEndpoint(),
+        $endpoint = sprintf(
+            $this->apiResourceString,
+            parent::getEndpoint(),
             $this->getInstallationId()
         );
 

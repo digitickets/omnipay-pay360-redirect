@@ -30,8 +30,8 @@ class CompleteRedirectPurchaseRequest extends AbstractPurchaseRequest
 
         $httpResponse = $this->httpClient->get(
             $this->getEndpoint(),
-            $this->getHeaders(),
-            $jsonData
+            $this->getHeaders()
+            // , $jsonData
         )->send();
 
         return $this->response = new CompleteRedirectPurchaseResponse(

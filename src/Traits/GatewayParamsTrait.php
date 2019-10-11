@@ -14,7 +14,7 @@ trait GatewayParamsTrait
      *
      * @return mixed
      */
-    public function setInstallationId(string $value)
+    public function setInstallationId($value)
     {
         return $this->setParameter('installationId', $value);
     }
@@ -22,7 +22,7 @@ trait GatewayParamsTrait
     /**
      * @return mixed
      */
-    public function getInstallationId(): string
+    public function getInstallationId()
     {
         return $this->getParameter('installationId');
     }
@@ -32,7 +32,7 @@ trait GatewayParamsTrait
      *
      * @return mixed
      */
-    public function setApiUsername(string $value)
+    public function setApiUsername($value)
     {
         return $this->setParameter('apiUsername', $value);
     }
@@ -40,7 +40,7 @@ trait GatewayParamsTrait
     /**
      * @return mixed
      */
-    public function getApiUsername(): string
+    public function getApiUsername()
     {
         return $this->getParameter('apiUsername');
     }
@@ -50,7 +50,7 @@ trait GatewayParamsTrait
      *
      * @return mixed
      */
-    public function setApiPassword(string $value)
+    public function setApiPassword($value)
     {
         return $this->setParameter('apiPassword', $value);
     }
@@ -58,7 +58,7 @@ trait GatewayParamsTrait
     /**
      * @return mixed
      */
-    public function getApiPassword(): string
+    public function getApiPassword()
     {
         return $this->getParameter('apiPassword');
     }

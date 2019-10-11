@@ -56,8 +56,10 @@ class Gateway extends AbstractGateway
     {
         $options = array_merge($this->getParameters(), $options);
 
-        return $this->createRequest(CompleteRedirectPurchaseRequest::class,
-            $options);
+        return $this->createRequest(
+            CompleteRedirectPurchaseRequest::class,
+            $options
+        );
     }
 
     /**
